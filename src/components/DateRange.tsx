@@ -7,23 +7,22 @@ const DateRange = () => {
 
   return (
     <form
-      className="bg-white gap-4 rounded flex"
+      className="bg-white gap-4 rounded-sm flex p-4 "
       onSubmit={(e) => e.preventDefault()}
     >
       <DateInput
         label="Inicio"
         value={inicio}
         onChange={({ target }) => setInicio(target.value)}
-        className="ml-2 border rounded"
+        className="border rounded"
       />
-      {inicio}
+
       <DateInput
         label="Final"
         value={final}
         onChange={({ target }) => setFinal(target.value)}
-        className="ml-2 border rounded"
+        className="border rounded"
       />
-      {final}
     </form>
   );
 };
